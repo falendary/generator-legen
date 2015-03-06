@@ -4,7 +4,11 @@
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "falendary/generator-legen",
+  "repository": 
+  {
+    "type": "git",
+    "url": "https://github.com/falendary/generator-legen.git"
+  },
   "author": {
     "name": "Legendary",
     "email": "",
