@@ -1,13 +1,12 @@
 {
   "name": "generator-legen",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Yeoman generator",
-  "license": "MIT",
   "main": "app/index.js",
   "repository": 
   {
     "type": "git",
-    "url": "https://github.com/falendary/generator-legen.git"
+    "url": "git://github.com/falendary/generator-legen.git"
   },
   "author": {
     "name": "Legendary",
@@ -33,5 +32,6 @@
   },
   "devDependencies": {
     "mocha": "*"
-  }
+  },
+  "license": "MIT"
 }
