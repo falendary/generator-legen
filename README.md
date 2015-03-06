@@ -1,4 +1,4 @@
-# generator-legenerator [![Build Status](https://secure.travis-ci.org/falendary/generator-legenerator.png?branch=master)](https://travis-ci.org/falendary/generator-legenerator)
+# generator-legen [![Build Status](https://secure.travis-ci.org/falendary/generator-legen.png?branch=master)](https://travis-ci.org/falendary/generator-legen)
 
 > [Yeoman](http://yeoman.io) generator
 
@@ -32,7 +32,7 @@ npm install -g generator-legen
 Finally, initiate the generator:
 
 ```bash
-yo legenerator
+yo legen
 ```
 
 ### Getting To Know Yeoman
