@@ -34,7 +34,7 @@ gulp.task('css', function () {
         //Вариативный таск
 // Собираем HTML препроцессор
 gulp.task('jade', function() {
-    gulp.src(['./app/src/jade/**/*.jade', '!./app/src/jade/utils/*.jade'])
+    gulp.src(['./app/src/jade/**/*.jade', '!./app/src/jade/modules/*.jade'])
         .pipe(jade({
             pretty: true
         }))  // Собираем Jade только в папке assets/template/ исключая файлы из utils

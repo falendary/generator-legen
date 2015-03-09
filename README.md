@@ -1,12 +1,11 @@
-# generator-legen [![Build Status](https://secure.travis-ci.org/falendary/generator-legen.png?branch=master)](https://travis-ci.org/falendary/generator-legen)
-
-
+# generator-legen
 
 ## Getting Started
 
 ### What is legen?
 
 It's a frontend projects generator with many features
+
 First of all legen make easier frontend development
 It's generating file structrure for you, and structure depends
 of what you choose through installation    

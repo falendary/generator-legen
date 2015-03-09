@@ -417,7 +417,7 @@ Legen.prototype.app = function app()
 	this.mkdir('app/src');
 		// Папка для препроцессоров CSS
 	this.mkdir('app/src/'+this.CSSpreprocessorsName+'/');
-		this.write('app/src/index.'+this.CSSpreprocessorsExt, '');
+		this.write('app/src/'+this.CSSpreprocessorsName+'/index.'+this.CSSpreprocessorsExt, '');
 		// Папка для препроцессоров HTML
 			// Jade
 	this.mkdir('app/src/jade/');
@@ -504,7 +504,7 @@ Legen.prototype.app = function app()
 
 
 			// Исходный индексный файлик 
-		this.write('app/src/index.jade', '');
+		this.write('app/src/jade/index.jade', '');
 		// Coffescript
 	this.mkdir('app/src/coffee/');
 
@@ -549,6 +549,9 @@ Legen.prototype.app = function app()
   	this.copy('_Gulpfile.js', 'Gulpfile.js');
 }
 
+Legen.prototype.git = function git() {
+  this.copy('gitignore', '.gitignore');
+};
 Legen.prototype.projectfiles = function projectfiles() {
   this.copy('editorconfig', '.editorconfig');
   this.copy('jshintrc', '.jshintrc');
