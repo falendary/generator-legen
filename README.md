@@ -11,9 +11,9 @@ First of all legen make easier frontend development
 It's generating file structrure for you, and structure depends
 of what you choose through installation    
 You can choose:
-< a framework (bootstrap, foundation)
-< a CSS-preprocessor (LESS, SCSS, stylus)
-< bunch of snippet modules for app (jade)
+- a framework (bootstrap, foundation)
+- a CSS-preprocessor (LESS, SCSS, stylus)
+- bunch of snippet modules for app (jade)
 Based on your options generator create 
 for you Gulpfile.js bower.js and package.json
 
