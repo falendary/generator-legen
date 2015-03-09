@@ -1,0 +1,26 @@
+//- Author: Sergey Zhitenev
+//- Licence: "MIT"
+//- Дата добавления модуля: 9.03.2015
+//- Версия: 0.0.1
+//- Description: order.jade является компонентом интернетмагазина, order.jade представляет модули
+//- оформления заказа
+//- Требования:
+//- 	Чего не хватает:
+//- 		1) Разнообразным вариантов с разными полями
+//- 		2) Оформление заказа без регистрации
+//- 		3) Многоступенчатное оформление заказа
+
+.order-holder
+	form(action="")order
+		h1.form-header
+			|ОФОРМЛЕНИЕ ЗАКАЗА
+		input(type="text", placeholder="Иван Петров")
+		input(type="text", placeholder="+7 (910) 234-45-45")
+		input(type="email", placeholder="somebody@gmail.com")
+		.captcha-holder
+			input(type="text", placeholder="капча").captcha-input
+			a(href="#").captcha
+				img(src="images/m-captcha-example.png", alt="captchacode")
+		p.callback
+			|заказать обратный звонок
+		input(type="submit", value="ОТПРАВИТЬ").btn-md.btn-submit.centered

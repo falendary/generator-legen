@@ -1,0 +1,44 @@
+//- Author: Sergey Zhitenev
+//- Licence: "MIT"
+//- Дата добавления модуля: 9.03.2015
+//- Версия: 0.0.1
+//- Description: header.jade представляет модуль шапки сайта
+//- Содержит контактную информацию, телефон, email
+//- логотип, навигацию, кнопки авторизации
+header
+	.row
+		.logo.pull-left
+			img(src="./images/m-header-logo.png", alt="")
+		.phone.pull-left
+			|8-800-200-80-30
+	.row
+		a(href="#").btn.btn-search.pull-left
+		//- .email.pull-left
+		.btn-group.pull-right
+			a(href="#").btn.btn-cart.pull-left
+			a(href="#").btn.btn-menu.pull-left
+		.btn-group.pull-right
+			a(href="#").btn.btn-profile.pull-left
+			a(href="#").btn.btn-cam.pull-left
+	ul.dropped-menu
+		li
+			a(href="#")
+				|О КОМПАНИИ
+		li
+			a(href="#")
+				|Магазин
+		li
+			a(href="#")
+				|Подключение
+		li
+			a(href="#")
+				|Готовые решения
+		li
+			a(href="#")
+				|Тарифы
+		li
+			a(href="#")
+				|Контакты
+	form(action="").dropped-search
+		input(type="text", placeholder="ВВЕДИТЕ ВАШ ЗАПРОС", value="")
+		a(href="#").clearform

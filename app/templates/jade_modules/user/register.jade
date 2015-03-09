@@ -1,0 +1,51 @@
+//- Author: Sergey Zhitenev
+//- Licence: "MIT"
+//- Дата добавления модуля: 9.03.2015
+//- Версия: 0.0.1
+//- Description: в register.jade представлены различные модули регистрации,
+//- состоит из разнообразного количество полей, возможных реализаций очень много
+//- Имеет несколько проблем:
+//- 1) Разные способы валидации ошибок
+//- 2) Поддержка мультиязычности
+//- 3) Регистрация может быть через:
+//- 	3.1) Модальное окно
+//- 	3.2) Отдельную страничку
+//- 	3.3) Цепочка страниц (пошаговость)
+
+
+//- Самый простой вариант, с генерацией пароля на сервере, плейсхолдеры (доп логика), в основном в модальном окне
+.register-holder
+	form(action="", method="").register
+		input(type="text", value="Логин")
+			.error-holder
+				.error-login
+					|Некорректный логин
+		input(type="email", value="anon@gmail.com")
+			.error-holder
+				.error-email
+					|Некорректный email
+		input(type="submit", value="Отправить")
+//- Частоиспользуемый вариант, тоже стилизуемые плейсхолдеры
+.register-holder
+	form(action="", method="").register
+		input(type="text", value="Логин")
+			.error-holder
+				.error-login
+					|Некорректный логин
+		input(type="email", value="anon@gmail.com")
+			.error-holder
+				.error-email
+					|Некорректный email
+		input(type="text", value="Телефон")
+			.error-holder
+				.error-email
+					|Содержит только цифры
+		input(type="password", value="Пароль")
+			.error-holder
+				.error-password
+					|Не соответсвует требованиям
+		input(type="password", value="Повторите пароль")
+			.error-holder
+				.error-repeatpass
+					|Пароли не совпадают	
+		input(type="submit", value="Отправить")

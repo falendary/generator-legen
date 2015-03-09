@@ -1,0 +1,32 @@
+//- Author: Sergey Zhitenev
+//- Licence: "MIT"
+//- Дата добавления модуля: 9.03.2015
+//- Версия: 0.0.1
+//- Description: в newslist.jade это модуль списка новостей, список содержит
+//- Превью картинки, дату, краткое описание
+//- Представлен как отдельная страница со списком
+//- Чего не хватает:
+//- 1) Заголовка новости
+//- 2) Кнопки читать далее
+//- 3) Вида для сайдбара
+
+.newslist-holder
+	h1.newslist-header
+		|НОВОСТИ
+	ul.newslist
+		li.newslist-item
+			.newslist-img-holder
+				img(src="", alt="").newslist-img
+			.newslist-content-holder
+				time.new-list-date
+					|21.08.2014
+				a(href="#").newslist-content
+					|SVI-625M – IP-камера с моторизованным объективом и интеллектуальным подогревом
+		li.newslist-item
+			.newslist-img-holder
+				img(src="", alt="").newslist-img
+			.newslist-content-holder
+				time.new-list-date
+					|21.08.2014
+				a(href="#").newslist-content
+					|SVI-625M – IP-камера с моторизованным объективом и интеллектуальным подогревом

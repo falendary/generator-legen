@@ -1,0 +1,70 @@
+//- Author: Sergey Zhitenev
+//- Licence: "MIT"
+//- Дата добавления модуля: 9.03.2015
+//- Версия: 0.0.1
+//- Description: cart.jade является компонентом интернет магазина, модуль cart.jade 
+//- представляет корзинку выбраных товаров, содержит список покупок, с выбором количества
+//- блок с автоподсчетом, стоимости и кнопкой перейти к оформлению
+
+
+.cart-holder
+	form(action="#").cart
+		//- Список товаров
+		ul.listitem
+			//- Выбранный товар
+			li.item
+				//- Картинка
+				img(src="", alt="")
+				//- Название 
+				p.name
+					|ВЕБ-КАМЕРА
+				//- Артикул
+				p.article
+					|DNS-0306ABS
+				//- Краткое описание
+				p.desc
+					|640x480 (1280x960 с драйверами, USB 2.0)
+				//- Цена 1 шт
+				p.price
+					|520 Р
+				//- Количество покупаемого товара
+				input(type="text", value="1").cart-input
+				//- Удалить товар из списка покупок
+				a(href="#").btn-md.rm-from-cart.centered
+					|УДАЛИТЬ ТОВАР
+			li.item
+				img(src="", alt="")
+				p.name
+					|ВЕБ-КАМЕРА
+				p.article
+					|DNS-0306ABS
+				p.desc
+					|640x480 (1280x960 с драйверами, USB 2.0)
+				p.price
+					|520 Р
+				input(type="text", value="1").cart-input
+				a(href="#").btn-md.rm-from-cart.centered
+					|УДАЛИТЬ ТОВАР
+			li.item
+				img(src="", alt="")
+				p.name
+					|ВЕБ-КАМЕРА
+				p.article
+					|DNS-0306ABS
+				p.desc
+					|640x480 (1280x960 с драйверами, USB 2.0)
+				p.price
+					|520 Р
+				input(type="text", value="1").cart-input
+				a(href="#").btn-md.rm-from-cart.centered
+					|УДАЛИТЬ ТОВАР
+		//- Подсчет общей стоимости
+		.intotal
+			p
+				|В корзине:
+			.count-holder
+				|3 товара
+			.price-count-holder
+				|15 000 Р
+		.border-bottom
+			input(type="submit", value="ОФОРМИТЬ ЗАКАЗ").btn-md.btn-order.centered

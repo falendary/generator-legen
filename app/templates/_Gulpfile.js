@@ -12,7 +12,7 @@ var gulp    = require('gulp'), // Сообственно Gulp JS
 
 
 
-<% if (_.slugify(CSSpreprocessorsName) != 'null') { %>
+<% if (_.slugify(CSSpreprocessorsName) != 'css') { %>
         //Вариативный таск 
 // Собираем CSS препроцессор
 gulp.task('css', function () {
@@ -23,7 +23,14 @@ gulp.task('css', function () {
         .pipe(gulp.dest('./app/dev/css')) // отправляем в версию для разработки
         .pipe(connect.reload());
 });
-<% } %>
+<% } else {%>
+gulp.task('css', function () {
+    gulp.src('./app/src/<%= _.slugify(CSSpreprocessorsName) %>/**/*.<%= CSSpreprocessorsExt %>')
+        .pipe(concat('style.css')) // склеиваем полученные css в style.css
+        .pipe(gulp.dest('./app/dev/css')) // отправляем в версию для разработки
+        .pipe(connect.reload());
+});
+<% }%>   
         //Вариативный таск
 // Собираем HTML препроцессор
 gulp.task('jade', function() {
